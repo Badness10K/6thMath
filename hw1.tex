@@ -1,0 +1,109 @@
+\documentclass[12pt]{article}
+ \usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{xlop}
+ 
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\multprob}[3]{\begin{tabular}{r}
+$#1$ \\
+$\times #2$ \\
+\hline
+$\boxed{#3}$
+\end{tabular}}
+
+\newcommand\Mydiv[2]{%
+$\strut#1$\kern.25em\smash{\raise.3ex\hbox{$\big)$}}$\mkern-8mu
+        \overline{\enspace\strut#2}$}
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+
+\title{Pg 68-70, 2-20 even, 23, 26-32 even, 48, 57, 58}
+\author{Mia Jones}
+\maketitle
+ 
+\begin{problem}{2}
+$9.15 \approx \boxed{9}$
+\end{problem}
+ 
+ \begin{problem}{4}
+$5.85 \approx \boxed{6}$
+\end{problem}
+
+\begin{problem}{6}
+\multprob{0.06}{0.6}{0.036}.
+\end{problem}
+
+\begin{problem}{8}
+\multprob{0.05}{8}{0.04}.
+\end{problem}
+
+\begin{problem}{10}
+\multprob{9.3}{8.1}{75.33}.
+(Check: Since $9.3 \approx 9$ and $8.1 \approx 8$, we see $9 \cdot 8 = 72$, which is close to $75.33$.)
+\end{problem}
+
+\begin{problem}{12}
+\multprob{0.7}{0.01}{0.007}.
+(Check: $1 \cdot 0.01 = 0.01$. Yes, this is reasonable.)
+\end{problem}
+
+\begin{problem}{14}
+\multprob{21.8}{3.9}{85.02}. (Check: $22 \cdot 4 = 88$, which is close.)
+\end{problem}
+
+\begin{problem}{16}
+\multprob{0.086}{0.007}{0.000602}.
+(Check: $0.09 \cdot 0.1 = 0.009$.
+Yes, this is reasonable.)
+\end{problem}
+
+\begin{problem}{18}
+\multprob{0.045}{1.2}{0.054}.
+(Check:$ 0.5 \cdot 1 = 0.5$
+Yes, this is reasonable.)
+\end{problem}
+
+\begin{problem}{20}
+\multprob{16.34}{1.001}{16.35634}.
+(Check: $16 \cdot 1 = 16$
+This is reasonable.)
+\end{problem}
+
+\begin{problem}{23}
+L = 3 mm, W = 4.5 mm
+\\A = LW \\ A = $3 mm \cdot 4.5 mm$ \\ A = $\boxed{13.5mm^{2}}.$
+\end{problem}
+
+\begin{problem}{26}
+$3.45 \cdot 90.2 \\ \approx 3 \cdot 90 \\= \boxed{270}.$ 
+\end{problem}
+
+\begin{problem}{28}
+$4.57 \cdot 199.4 \\ \approx 5 \cdot 200 \\ = \boxed{1000}.$
+\end{problem}
+
+\begin{problem}{30}
+$6.92 \cdot 0.08 \\ \approx 7 \cdot 0.1 \\ = \boxed{0.7}.$
+\end{problem}
+
+\begin{problem}{32}
+$15.75 \cdot 1.39\\ \approx 16 \cdot 1 \\ = \boxed{16}.$
+\end{problem}
+
+\begin{problem}{48}
+$23.06 \cdot 3.3 \\ \approx 23.1 \cdot 3.3 \\ = 75.9$
+\\ \\ \multprob{23.1}{3.3}{75.9}.
+\end{problem}
+
+\begin{problem}{57}
+ $\begin{array}{r} \boxed{39} \\ \Mydiv{4}{156} \end{array}$
+\end{problem}
+
+\begin{problem}{58}
+  $\begin{array}{r} \boxed{51} \\ \Mydiv{7}{357} \end{array}$
+\end{problem}
+\end{document}

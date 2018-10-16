@@ -18,28 +18,22 @@
 
 \maketitle
 
-
 \begin{tikzpicture}
 \begin{axis}[
 	x tick label style={
 		/pgf/number format/1000 sep=},
-	title=Length of Poo on an Average Thursday,
+	ylabel=Length of Poo(in inches),
 	xlabel=Year,
-	ylabel=Length of Poo (Inch),
-	enlargelimits=0.05,
+	enlargelimits=0.005,
 	legend style={at={(0.5,-0.1)},
 	anchor=north,legend columns=-1},
-	ybar interval=0.7,
-	legend pos= north east,
+	ybar interval=0.5,
+	title=Length of Poo on an Average Thursday,
+	legend=Thick, Thin
 ]
-
 \addplot 
-	coordinates {(2012,408184) (2011,408348)
+	coordinates {(2012,401184) (2011,408348)
 		 (2010,414870) (2009,412156)};
-\addplot 
-	coordinates {(2012,388950) (2011,393007) 
-		(2010,398449) (2009,395972)};
-\legend{Thick, Thin}
 \end{axis}
 \end{tikzpicture}
 

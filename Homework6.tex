@@ -41,8 +41,22 @@ Bar graphs compare numbers from data sets, whereas line graphs are used for show
 \boxed{\text{Bottled drinks.}}
 \end{problem}
 
-\begin{problem}{8}
 
-\end{problem}
+\begin{tikzpicture}
+\begin{axis}[
+	x tick label style={
+		/pgf/number format/1000 sep=},
+	ylabel=Year,
+	enlargelimits=0.05,
+	ybar interval=0.7,
+]
+\addplot 
+	coordinates {(1996,408184) (1998,408348)
+		 (2000,414870) (2002,412156)};
+\addplot 
+	coordinates {(1996,408192) (1998,393007) 
+		(2000,398449) (2002,395972)};
+\end{axis}
+\end{tikzpicture}
 
 \end{document}

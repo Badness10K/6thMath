@@ -11,30 +11,36 @@
 \item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
  
  
- 
 \begin{document}
 \title{Experimenting with Plots}
 \author{Mia Jones}
 
 \maketitle
 
-\begin{tikzpicture}
-\begin{axis}[
-	x tick label style={
-		/pgf/number format/1000 sep=},
-	ylabel=Length of Poo(in inches),
-	xlabel=Year,
-	enlargelimits=0.005,
-	legend style={at={(0.5,-0.1)},
-	anchor=north,legend columns=-1},
-	ybar interval=0.5,
-	title=Length of Poo on an Average Thursday,
-	legend=Thick, Thin
-]
-\addplot 
-	coordinates {(2012,401184) (2011,408348)
-		 (2010,414870) (2009,412156)};
-\end{axis}
-\end{tikzpicture}
+
+\begin{problem}{1}
+
+\begin{table}[ht]
+\caption{Frequency Table}
+\centering
+\begin{tabular}{c c c}
+\hline\hline 
+Range & Tally & Frequency \\ [0.5ex]
+\hline
+1 & 50 & 837\\
+\hline
+2 & 47 & 877\\
+\hline
+3 & 31 & 25\\
+\hline
+4 & 35 & 144\\
+\hline
+5 & 45 & 300\\ [1ex] 
+\hline 
+\end{tabular}
+\label{table:nonlin}
+\end{table}
+
+\end{problem}
 
 \end{document}

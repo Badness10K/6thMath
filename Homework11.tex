@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+ \usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{stackengine}
+ 
+\newcommand{\longdiv}[2]{$#1\overline{\smash{)}#2}$}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+ 
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+
+\begin{document}
+
+\title{Pg. 201-202, #1, 2-28 even}
+\date{November 13, 2016}
+\author{Mia Jones}
+
+\maketitle
+
+\begin{problem}{1}
+If the results of long division repeat without end, the quotient is a \boxed{\text{repeating decimal.}}
+\end{problem}
+
+\begin{problem}{2}
+If a long division problem gives a remainder of 0, the quotient is a \boxed{\text{finite decimal.}}
+\end{problem}
+
+\begin{problem}{4}
+1 $\frac{1}{4}$ = \boxed{1.25}
+\end{problem}
+
+\begin{problem}{6}
+$\frac{5}{6}$ = \boxed{0.8\overline{3}} 
+\\
+\def\stackalignment{r}
+
+\savestack{\workdetails}{\Longunderstack{\longdiv{6}{5.00}
+  \underline{4.8\phantom{0}} 
+  \phantom{0}20
+  \underline{\phantom{0}18}
+  \phantom{00}2
+}}
+
+\Shortstack{\boxed{0.8\overline{3}} {\workdetails}}
+\end{problem}
+
+\begin{problem}{8}
+2 $\frac{2}{3}$ = \boxed{2.\overline{6}}
+\end{problem}
+
+\begin{problem}{10}
+5 $\frac{4}{25}$ = \boxed{5.16}
+\end{problem}
+
+\begin{problem}{12}
+9 $\frac{7}{111}$ = \boxed{9.0\overline{360}}
+\\
+\def\stackalignment{r}
+
+\savestack{\workdetails}{\Longunderstack{\longdiv{111}{7.00000}
+  \underline{666\phantom{000}} 
+  \phantom{70}340\phantom{00}
+  \underline{333\phantom{00}}
+  \phantom{00}700
+}}
+
+\Shortstack{\boxed{0.0\overline{630}} {\workdetails}}
+
+\end{problem}
+
+\begin{problem}{14}
+\boxed{0.\overline{7}}
+\end{problem}
+
+\begin{problem}{16}
+\boxed{3.5\overline{8}}
+\end{problem}
+
+\begin{problem}{18}
+\def\stackalignment{r}
+
+\savestack{\workdetails}{\Longunderstack{\longdiv{11}{5.00}
+  \underline{44\phantom{0}} 
+  \phantom{5}60
+  \underline{\phantom{0}55}
+  \phantom{00}5
+}}
+
+\Shortstack{\boxed{0.\overline{45}} {\workdetails}}
+
+Both decimal digits shown will repeat, so the bar should go over the 4 and the 5: \boxed{0.\overline{45.}} 
+\end{problem}
+
+\begin{problem}{20}
+0.8 = $\boxed{\frac{4}{5}}$
+\end{problem}
+
+\begin{problem}{22}
+0.125 = $\boxed{\frac{1}{8}}$
+\end{problem}
+
+\begin{problem}{24}
+4.175 = $\boxed{4 \frac{7}{40}}$
+\end{problem}
+
+\begin{problem}{26}
+
+\end{problem}
+\end{document}
